@@ -1,0 +1,9 @@
+{
+    "name": "Zhihu Unfollower",
+    "version": "1.0 beta",
+    "description": "批量取消知乎上关注的问题",
+    // "page_action": {
+    //     "default_popup": "popup.html"
+    // },
+    "manifest_version": 2
+}
