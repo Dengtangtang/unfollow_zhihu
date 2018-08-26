@@ -1,9 +1,30 @@
 {
     "name": "Zhihu Unfollower",
-    "version": "1.0 beta",
+    "version": "1.0",
     "description": "批量取消知乎上关注的问题",
-    // "page_action": {
-    //     "default_popup": "popup.html"
-    // },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "declarativeContent",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    // "content_scripts": [
+    //     {
+    //         "matches": ["https://www.zhihu.com/people/*/following/questions*"],
+    //          "run_at": "document_idle",
+    //         "js": ["contentScript.js"]
+    //     }
+    // ],
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/16_icon.png",
+            "32": "images/32_icon.png"
+        }
+    },
     "manifest_version": 2
 }

@@ -5,3 +5,6 @@
 
 # All compiled code files
 *.pyc
+
+# My configurations.
+# images/*
