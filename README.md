@@ -3,8 +3,9 @@
 一个简易的chrome扩展程序, 能够批量的取关用户关注的问题~
 p.s. 写这个的起因是当时想清洗帐号, 但发现取关问题居然需要点进去取关...醉了...
 
+
 ## Built with
-javascript, html, css and chrome API.
+javascript, html, css plus chrome API.
 
 
 ## Installing
@@ -15,7 +16,7 @@ javascript, html, css and chrome API.
 
 ## Demo
 
-* 成功安装的话, chrome右上角会有这个扩展的icon. 平时是灰色的, 也就是未启动. 必须在 https://www.zhihu.com/people/你的用户名id/following/questions(可能有queryString)才会启动(变成彩色).
+* 成功安装的话, chrome右上角会有这个扩展的icon. 平时是灰色的, 也就是未启动. 必须在 "https://www[.]zhihu[.]com/people/你的id/following/questions[queryString]" 才会启动(变成彩色).
 
 ![](images/readme/1.png)
 
@@ -30,4 +31,4 @@ javascript, html, css and chrome API.
 
 ## License
 
-欢迎自己使用或者修改, 不可私自发布.
+欢迎自己使用或者修改, 其他就算了.
