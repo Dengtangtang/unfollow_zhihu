@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: #585c63;
+        }
+        h2 {
+            color: #ffffff;
+            font-family: 'Raleway',sans-serif;
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 36px;
+            margin: 0 0 24px;
+            text-align: center;
+        }
+        .text-container {
+            color: #ffffff;
+        }
+        .button-container {
+            width: 200px;
+            text-align: center; 
+        }
+        .button {
+            color: #444444;
+            background: #F3F3F3;
+            border: 1px #DADADA solid;
+            padding: 5px 10px;
+            border-radius: 2px;
+            font-weight: bold;
+            font-size: 9pt;
+            outline: none;
+            /*position: absolute;
+            left: 50%;*/
+       }
+        .button:hover {
+            border: 1px #C6C6C6 solid;
+            box-shadow: 1px 1px 1px #EAEAEA;
+            color: #333333;
+            background: #F7F7F7;
+        }
+        .button:active {
+            box-shadow: inset 1px 1px 1px #DFDFDF; 
+        }
+    </style>
 </head>
 <body>
-    <button type="button" id="init">Init</button>
-    <button type="button" id="collect">Collect</button>
-    <button type="button" id="unfollow">Unfollow</button>
+    <h2>Zhihu Unfollower</h2>
+    <div class="text-container">
+        <ol>
+            <li>勾选你要取关的问题</li>
+            <li>点击unfollow按钮</li>
+            <li>没了</li>
+        </ol>
+    </div>
+    <div class="button-container">
+        <button type="button" id="unfollow" class="button">Unfollow</button>
+    </div>
+
     <script src="popup.js"></script>
 </body>
 </html>
