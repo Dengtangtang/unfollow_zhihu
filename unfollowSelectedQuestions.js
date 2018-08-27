@@ -46,7 +46,7 @@ function unfollowSelectedQuestions() {
         let currSelectedQuestion = selectedQuestions[i];  // It is question id in fact.
         let delete_url = 'https://www.zhihu.com/api/v4/questions/' + currSelectedQuestion + '/followers';
         let request = new XMLHttpRequest();
-        request.open('DELETE', delete_url, true);
+        request.open('DELETE', delete_url, false);
         request.setRequestHeader('x-requested-with', 'fetch');
         request.onreadystatechange = function() {
             // if (this.readyState == 4) {
