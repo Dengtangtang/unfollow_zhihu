@@ -7,9 +7,9 @@ p.s. 写这个的起因是当时想清洗帐号, 但发现取关问题居然需�
 
 ## Built with
 
-javascript (pure)
-html5
-css3
+* javascript (pure)
+* html5
+* css3
 
 
 ## Installing
