@@ -20,15 +20,15 @@ css3
 
 ## Demo
 
-* 成功安装的话, chrome右上角会有这个扩展的icon. 平时是灰色的, 也就是未启动. 必须进入页面[https://www[.]zhihu[.]com/people/你的id/following/questions[queryString]]才会启动(变成彩色).
+1. 成功安装的话, chrome右上角会有这个扩展的icon. 平时是灰色的, 也就是未启动. 必须进入页面<u>[https://www[.]zhihu[.]com/people/你的id/following/questions[queryString]]</u>>才会启动(变成彩色).
 
 ![](images/readme/1.png)
 
-* 点击那个icon, 你会发现当前页每一个问题后面有一个checkbox.
+2. 点击那个icon, 你会发现当前页每一个问题后面有一个checkbox.
 
 ![](images/readme/2.png)
 
-* 勾选你想要取关的问题, 按unfollow, 搞定.
+3. 勾选你想要取关的问题, 按unfollow, 搞定.
 
 ![](images/readme/3.png)
 
