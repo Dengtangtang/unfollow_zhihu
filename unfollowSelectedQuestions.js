@@ -30,30 +30,13 @@ function unfollowSelectedQuestions() {
         return false;
     }
 
-    var questionListItems = document.getElementsByClassName('List-item');
-    var ListItemMapper = {};
-    
-    for (var j = 0; j < questionListItems.length; j++) {
-        var currListItem = questionListItems[j];
-        var currContentItem = currListItem.childNodes[0];
-        var data = currContentItem.getAttribute('data-za-extra-module');
-        var jsonData = JSON.parse(data);
-        var token = jsonData["card"]["content"]["token"];
-        ListItemMapper[token] = currListItem;
-    }
-
     for (var i = 0; i < selectedQuestions.length; i++) {
-        let currSelectedQuestion = selectedQuestions[i];  // It is question id in fact.
-        let delete_url = 'https://www.zhihu.com/api/v4/questions/' + currSelectedQuestion + '/followers';
-        let request = new XMLHttpRequest();
+        var currSelectedQuestion = selectedQuestions[i];  // It is question id in fact.
+        var delete_url = 'https://www.zhihu.com/api/v4/questions/' + currSelectedQuestion + '/followers';
+        var request = new XMLHttpRequest();
         request.open('DELETE', delete_url, false);
         request.setRequestHeader('x-requested-with', 'fetch');
-        request.onreadystatechange = function() {
-            // if (this.readyState == 4) {
-            //     var removedNode = ListItemMapper[currSelectedQuestion];
-            //     removedNode.parentNode.removeChild(removedNode);
-            // }
-        };
+        request.onreadystatechange = function() {};
         request.send(null);
     }
 
